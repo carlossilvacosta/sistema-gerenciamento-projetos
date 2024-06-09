@@ -17,17 +17,17 @@ public class TaskController {
 
     @PostMapping
     public ResponseEntity<Task> createTask(@RequestBody Task task,
-                                           @RequestParam(required = false) Long projectId,
-                                           @RequestParam(required = false) List<Long> tagIds) {
+            @RequestParam(required = false) Long projectId,
+            @RequestParam(required = false) List<Long> tagIds) {
         Task createdTask = taskService.createTask(task, projectId, tagIds);
         return ResponseEntity.ok(createdTask);
     }
 
     @PutMapping("/{id}")
     public ResponseEntity<Task> updateTask(@PathVariable Long id,
-                                           @RequestBody Task taskDetails,
-                                           @RequestParam(required = false) Long projectId,
-                                           @RequestParam(required = false) List<Long> tagIds) {
+            @RequestBody Task taskDetails,
+            @RequestParam(required = false) Long projectId,
+            @RequestParam(required = false) List<Long> tagIds) {
         Task updatedTask = taskService.updateTask(id, taskDetails, projectId, tagIds);
         return ResponseEntity.ok(updatedTask);
     }
