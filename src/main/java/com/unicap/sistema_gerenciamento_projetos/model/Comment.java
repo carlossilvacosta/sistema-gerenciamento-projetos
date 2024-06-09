@@ -1,5 +1,7 @@
 package com.unicap.sistema_gerenciamento_projetos.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -17,6 +19,7 @@ public class Comment {
 
     @ManyToOne
     @JoinColumn(name = "task_id")
+    @JsonBackReference
     private Task task;
 
     public Long getId() {
