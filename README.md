@@ -13,3 +13,7 @@ REST API built with Java, Spring-Boot and PostgreSQL to manage projects.
 - JOSÉ IGOR FÉLIX PEREIRA
 - LAÍS QUEIROZ DIAS DO NASCIMENTO
 - MARCOS VINÍCIUS AMARO TENÓRIO
+
+[Link do vídeo de apresentação](https://www.youtube.com/watch?v=ZNBVGXqdSFI)
+
+[Link da apresentação (PDF)](https://drive.google.com/file/d/1Gywqm6GKfsoF7Hcyg2mWJPwnXbswSiEM/view?usp=sharing)
